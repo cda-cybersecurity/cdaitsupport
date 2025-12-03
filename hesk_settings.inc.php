@@ -4,10 +4,10 @@
 // ==> GENERAL
 
 // --> General settings
-$hesk_settings['site_title']='Website';
-$hesk_settings['site_url']='https://www.example.com';
-$hesk_settings['hesk_title']='Help Desk';
-$hesk_settings['hesk_url']='https://www.example.com/helpdesk';
+$hesk_settings['site_title']='CDA ICT Help Desk';
+$hesk_settings['site_url']='http://10.0.21.53:7070';
+$hesk_settings['hesk_title']='CDA ICT Help Desk';
+$hesk_settings['hesk_url']='http://10.0.21.53:7070/hesk';
 $hesk_settings['webmaster_mail']='support@example.com';
 $hesk_settings['site_theme']='hesk3';
 $hesk_settings['admin_css']=0;
@@ -19,14 +19,14 @@ $hesk_settings['admin_js_url']='https://www.example.com/hesk-script.js';
 $hesk_settings['can_sel_lang']=0;
 $hesk_settings['language']='English';
 $hesk_settings['languages']=array(
-    'English' => array('folder'=>'en','hr'=>'------ Reply above this line ------'),
+'English' => array('folder'=>'en','hr'=>'------ Reply above this line ------'),
 );
 
 // --> Database settings
-$hesk_settings['db_host']='localhost';
-$hesk_settings['db_name']='hesk';
-$hesk_settings['db_user']='test';
-$hesk_settings['db_pass']='test';
+$hesk_settings['db_host']='db';
+$hesk_settings['db_name']='hesk_db';
+$hesk_settings['db_user']='cdaitsupportadm';
+$hesk_settings['db_pass']='ey45hI3oi4MDk4NT543OT';
 $hesk_settings['db_pfix']='hesk_';
 
 
@@ -61,7 +61,7 @@ $hesk_settings['sequential']=1;
 $hesk_settings['time_worked']=1;
 $hesk_settings['spam_notice']=1;
 $hesk_settings['list_users']=0;
-$hesk_settings['debug_mode']=1;
+$hesk_settings['debug_mode']=0;
 $hesk_settings['short_link']=0;
 $hesk_settings['submitting_wait']=1;
 $hesk_settings['select_cat']=0;
@@ -91,14 +91,14 @@ $hesk_settings['customer_accounts_allow_email_changes']=1;
 $hesk_settings['customer_accounts_verify_email_cooldown']=15;
 
 // --> SPAM Prevention
-$hesk_settings['secimg_use']=1;
+$hesk_settings['secimg_use']=0;
 $hesk_settings['secimg_sum']='TMBQL7BN73';
 $hesk_settings['recaptcha_use']=0;
 $hesk_settings['recaptcha_public_key']='';
 $hesk_settings['recaptcha_private_key']='';
 $hesk_settings['question_use']=0;
-$hesk_settings['question_ask']='Type <i>PB6YM</i> here to fight SPAM:';
-$hesk_settings['question_ans']='PB6YM';
+$hesk_settings['question_ask']='Which of these is an animal: sun, water, turtle';
+$hesk_settings['question_ans']='turtle';
 
 // --> Security
 $hesk_settings['attempt_limit']=6;
@@ -109,22 +109,22 @@ $hesk_settings['email_view_ticket']=1;
 $hesk_settings['x_frame_opt']=1;
 $hesk_settings['samesite']='Lax';
 $hesk_settings['force_ssl']=0;
-$hesk_settings['url_key']='';
+$hesk_settings['url_key']='AU1cdPjqHNan2_muu4gg';
 $hesk_settings['require_mfa']=0;
 $hesk_settings['require_mfa_customers']=0;
 $hesk_settings['elevator_duration']='60M';
 
 // --> Attachments
-$hesk_settings['attachments']=array (
-    'use' => 1,
-    'max_number' => 2,
-    'max_size' => 2097152,
-    'allowed_types' => array('.gif','.jpg','.png','.zip','.rar','.csv','.doc','.docx','.xls','.xlsx','.txt','.pdf'),
-    'attachment_in_email_type' => 0,
-    'direct_attachment_in_email' => 0,
-    'direct_attachment_in_email_no_of_files' => 2,
-    'first_x_attachments' => 2,
-    'file_max_size' => 512000,
+$hesk_settings['attachments']=array(
+'use' => 1,
+'max_number' => 2,
+'max_size' => 2097152,
+'allowed_types' => array('.gif','.jpg','.png','.zip','.rar','.csv','.doc','.docx','.xls','.xlsx','.txt','.pdf'),
+'attachment_in_email_type' => 0,
+'direct_attachment_in_email' => 0,
+'direct_attachment_in_email_no_of_files' => 2,
+'first_x_attachments' => 2,
+'file_max_size' => 512000,
 );
 
 
@@ -134,7 +134,7 @@ $hesk_settings['attachments']=array (
 $hesk_settings['kb_enable']=1;
 $hesk_settings['kb_wysiwyg']=1;
 $hesk_settings['kb_search']=2;
-$hesk_settings['kb_search_limit']=10;
+$hesk_settings['kb_search_limit']=20;
 $hesk_settings['kb_views']=0;
 $hesk_settings['kb_date']=0;
 $hesk_settings['kb_recommendanswers']=1;
@@ -210,7 +210,6 @@ $hesk_settings['loop_time']=300;
 $hesk_settings['pipe_customer_rejection_notification']=1;
 $hesk_settings['pipe_customer_rejection_email_cooldown_hours']=24;
 
-
 // --> Detect email typos
 $hesk_settings['detect_typos']=1;
 $hesk_settings['email_providers']=array('aim.com','aol.co.uk','aol.com','att.net','bellsouth.net','blueyonder.co.uk','bt.com','btinternet.com','btopenworld.com','charter.net','comcast.net','cox.net','earthlink.net','email.com','facebook.com','fastmail.fm','free.fr','freeserve.co.uk','gmail.com','gmx.at','gmx.ch','gmx.com','gmx.de','gmx.fr','gmx.net','gmx.us','googlemail.com','hotmail.be','hotmail.co.uk','hotmail.com','hotmail.com.ar','hotmail.com.mx','hotmail.de','hotmail.es','hotmail.fr','hushmail.com','icloud.com','inbox.com','laposte.net','lavabit.com','list.ru','live.be','live.co.uk','live.com','live.com.ar','live.com.mx','live.de','live.fr','love.com','lycos.com','mac.com','mail.com','mail.ru','me.com','msn.com','nate.com','naver.com','neuf.fr','ntlworld.com','o2.co.uk','online.de','orange.fr','orange.net','outlook.com','pobox.com','prodigy.net.mx','qq.com','rambler.ru','rocketmail.com','safe-mail.net','sbcglobal.net','t-online.de','talktalk.co.uk','tiscali.co.uk','verizon.net','virgin.net','virginmedia.com','wanadoo.co.uk','wanadoo.fr','yahoo.co.id','yahoo.co.in','yahoo.co.jp','yahoo.co.kr','yahoo.co.uk','yahoo.com','yahoo.com.ar','yahoo.com.mx','yahoo.com.ph','yahoo.com.sg','yahoo.de','yahoo.fr','yandex.com','yandex.ru','ymail.com');
@@ -229,11 +228,11 @@ $hesk_settings['open_only']=1;
 
 // ==> TICKET LIST
 
-$hesk_settings['ticket_list']=array('trackid','lastchange','name','subject','status','lastreplier');
+$hesk_settings['ticket_list']=array('id','trackid','dt','lastchange','category','name','email','subject','status','owner','replies','staffreplies','lastreplier','time_worked');
 
 // --> Other
-$hesk_settings['submittedformat']=2;
-$hesk_settings['updatedformat']=2;
+$hesk_settings['submittedformat']=1;
+$hesk_settings['updatedformat']=1;
 $hesk_settings['format_submitted']='Y-m-d g:i a';
 $hesk_settings['format_updated']='Y-m-d g:i a';
 
