@@ -1,0 +1,4 @@
+body {
+    background: url('../img/wave.svg') no-repeat center center fixed !important;
+    background-size: cover;
+}

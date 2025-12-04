@@ -13,8 +13,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-    background: url('/img/itsupport.jpg') no-repeat center center fixed;
-    background-size: cover;
+
     line-height: 1;
     display: flex
 }
